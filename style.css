@@ -104,7 +104,6 @@ li {
   max-width: 100%;
   margin: 0 auto;
   width: 100%;
-  height: calc(100vh - 120px);
 }
 
 .landing__page-heading {
