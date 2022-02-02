@@ -145,19 +145,8 @@ li {
   align-items: center;
 }
 
-.timetable__heading {
-  font-size: 28px;
-  padding: 28px 0 28px 0;
-}
-
-.prayer__timetable-img {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-/* Prayer Time Table */
 .prayer__timetable--wrapper {
-  border: 5px solid green;
+  outline: 5px solid green;
   margin: 24px;
 }
 
@@ -171,7 +160,7 @@ li {
 table {
   line-height: 1;
   width: 100%;
-  max-width: 80rem;
+  /* max-width: 80rem; */
   margin: 1.5rem auto;
 }
 
