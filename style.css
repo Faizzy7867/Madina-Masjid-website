@@ -103,6 +103,8 @@ li {
 .main__img {
   max-width: 100%;
   margin: 0 auto;
+  object-fit: cover;
+  height: calc(100vh - 120px);
 }
 
 .landing__page-heading {
