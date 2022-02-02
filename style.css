@@ -143,6 +143,8 @@ li {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  border: 5px solid green;
+  margin: 24px;
 }
 
 .timetable__heading {
@@ -156,9 +158,10 @@ li {
 }
 
 /* Prayer Time Table */
-.prayer__timetable--wrapper {
-  border: 5px solid green;
-  margin: 24px;
+.prayer__timetable--row{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .prayer__time--heading {
