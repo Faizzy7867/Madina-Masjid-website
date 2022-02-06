@@ -10,11 +10,19 @@ html {
   scroll-behavior: smooth;
 }
 
+/* .landing-page {
+  min-height: 100vh;
+} */
+
+a, li{
+    text-decoration: none;
+}
+
 /* NAV BAR */
 .container {
   width: 100%;
-  max-width: 120rem;
-  padding: 0 3.2rem;
+  max-width: 1200px;
+  padding: 0 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,10 +77,11 @@ li {
 
 .donate {
   padding: 16px 33px;
-  color: #0d1832;
+  color: #32953c;
   border: 2px solid #3a9b43;
   border-radius: 100px;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .donate:hover {
@@ -130,30 +139,25 @@ li {
   color: white;
   line-height: 2.1rem;
   font-size: 22px;
-  font-family: "Amita", Sans-serif;
 }
 
 /* TIMETABLE SECTION */
 
-.prayer__timetable-section {
-  padding-bottom: 4.8rem;
+.container__landing-page{
+    background-color: #F4F4F5;
 }
 
 .prayer__timetable--wrapper {
-  outline: 3px solid green;
+  outline: 5px solid green;
   margin: 24px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 24px;
-  border-radius: 8px;
+  border: 5px solid green;
+  margin: 24px 24px 0;
 }
 
-.timetable__heading {
-  font-size: 28px;
-  padding: 28px 0 28px 0;
-}
 
 .prayer__timetable-img {
   max-width: 100%;
@@ -161,7 +165,7 @@ li {
 }
 
 /* Prayer Time Table */
-.prayer__timetable--row {
+.prayer__timetable--row{
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -170,21 +174,28 @@ li {
 .prayer__time--heading {
   text-align: center;
   line-height: 1.3;
-  margin: 1.5rem;
+  margin: 1rem;
   font-weight: 700;
+  letter-spacing: 0.08em;
   font-family: "Amita", Sans-serif;
+  font-size: 42px;
 }
 
 table {
   line-height: 1;
   width: 100%;
-  margin: 1.5rem auto;
+  margin: 1.25rem auto;
 }
 
 td {
   width: 20%;
   text-align: center;
-  padding: 1rem;
+}
+
+.prayer__name{
+    font-family: "Amita", Sans-serif;
+    font-weight: 900;
+    font-size: 24px;
 }
 
 tr:first-child {
@@ -209,173 +220,94 @@ span {
   text-decoration: none;
 }
 
-/* ABOUT */
 
-#about {
-  padding: 7.6rem 0;
-}
+/* C   O   N   T   A   C   T */
 
-.about__container {
+
+.contact__main--img{
   width: 100%;
-  max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-}
-
-.about__img {
-  width: 450px;
   margin: 0 auto;
   object-fit: cover;
-  border-radius: 10px;
-  border-style: hidden;
+  height: calc(100vh - 500px);
+  filter: brightness(80%);
 }
 
-.about__wrapper {
-  display: flex;
-  justify-content: space-around;
+.contact{
+    background-color: #F4F4F5;
 }
 
-.about__info--wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.contact__boxes{
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 80px;
 }
 
-.about__h2 {
-  font-size: 44px;
-  font-weight: 500;
-  margin: 16px;
-  font-family: "Amita", Sans-serif;
+.contact__box{
+    border: 2px #32953c solid;
+    padding:36px 0;
+    border-radius: 25px;
+    width: 30%;
+    background-color: white;
 }
 
-.about__para {
-  margin-left: 14px;
-  line-height: 1.5;
-  max-width: 80%;
-}
-
-/* PILLARS OF ISLAM */
-
-.pillars {
-  padding-bottom: 7.6rem;
-}
-
-.pillars__container {
-  width: 100%;
-  max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-}
-
-.pillars__wrapper {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.pillars__heading {
-  font-size: 44px;
-  font-weight: 700;
-  margin: 16px;
-  font-family: "Amita", Sans-serif;
-}
-
-.pillar__wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.pillar__title {
-  font-family: "Amita", Sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  color: #32953c;
-}
-
-.pillar__para {
-  line-height: 1.2;
-  max-width: 100%;
-}
-
-.pillar__type--wrapper {
-  margin: 14px;
-}
-
-/* Footer */
-
-.footer__container {
-  padding: 50px 0;
-  border-top: 3px solid #32953c;
-  border-radius: 5px;
-}
-
-.row {
-  width: 100%;
+.row{
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
-.row__column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.contact__box--title{
+    font-size: 36px;
+    margin-bottom: 12px;
 }
 
-footer {
-  background-color: white;
+.contact__box--sub-title{
+    margin-bottom: 32px;
+    font-size: 18px;
 }
 
-.footer__logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.email{
+    padding: 12px 30px;
+    font-size: 24px;
+    border-radius: 25px;
+    color: white;
+    background-color: #3a9b43;
+    transition: all 300ms ease;
 }
 
-.contact__info {
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 12px;
-  font-weight: 500;
+.email:hover{
+    color: #32953c;
+    background-color: #fff;
+    border: 2px #32953c solid;
 }
 
-.address {
-  margin: 12px;
+.phone{
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.025em;
 }
 
-.footer__logo--img {
-  width: 120px;
+i{
+    font-size: 80px;
+    margin-bottom: 24px;
+    color: #32953c;
 }
 
-.footer__link,
-.footer__copyright {
-  color: black;
+.contact__address{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 120px;
 }
 
-.footer__list {
-  margin: 20px 0 24px 0;
-}
-
-.footer__link {
-  padding: 0 8px;
-}
-
-.footer__lists {
-  display: flex;
-  transition: all 300ms ease-in-out;
-  margin-bottom: 20px;
-}
-
-.nav__list--footer {
-  margin-left: 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: black;
-  font-weight: 500;
+.address{
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 12px;
 }
