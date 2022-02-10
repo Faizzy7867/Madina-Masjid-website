@@ -94,7 +94,7 @@ li {
 .donate:before {
   content: "Donate";
   padding: 9px 11px;
-  visibility: hidden;
+  display: none;
   color: #0d1832;
   border: 2px solid #3a9b43;
   border-radius: 100px;
