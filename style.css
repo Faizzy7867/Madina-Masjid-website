@@ -94,7 +94,6 @@ li {
 .donate:before {
   content: "Donate";
   padding: 9px 11px;
-  display: none;
   color: #0d1832;
   border: 2px solid #3a9b43;
   border-radius: 100px;
@@ -575,6 +574,10 @@ i {
     text-align: center;
     max-width: 400px;
   }
+
+  .donate:before {
+    display: none;
+  }
 }
 
 /* Small phones, tablets, large smart phones */
@@ -594,6 +597,10 @@ i {
 
   .prayer {
     width: calc(100% / 3);
+  }
+
+  .donate:before {
+    display: none;
   }
 }
 
@@ -626,6 +633,10 @@ i {
   }
   .donate {
     padding: 9px 11px;
+  }
+
+  .donate:before {
+    display: none;
   }
 }
 
