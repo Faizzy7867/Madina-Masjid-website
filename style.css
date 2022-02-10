@@ -519,6 +519,7 @@ CONTACT
   color: white;
   background-color: #3a9b43;
   transition: all 300ms ease;
+  text-decoration: none;
 }
 
 .email:hover {
@@ -634,5 +635,28 @@ i {
   }
   .donate:before {
     visibility: visible;
+  }
+  .contact__boxes {
+    width: 165%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 50px;
+  }
+
+  .contact__box {
+    width: 50%;
+    margin-bottom: 28px;
+  }
+
+  .address {
+    margin-bottom: 12px;
+  }
+
+  .contact__address {
+    flex-direction: column;
+  }
+  .google__maps {
+    width: 105%;
   }
 }
