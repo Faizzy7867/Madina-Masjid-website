@@ -14,16 +14,29 @@ html {
 .container {
   width: 100%;
   max-width: 120rem;
-  padding: 0 3.2rem;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  width: 100%;
+}
+
 .logo {
-  width: 120px;
+  width: 100px;
   cursor: pointer;
+}
+
+.nav__lists--wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .nav__lists {
@@ -570,12 +583,15 @@ i {
   }
 }
 
+@media (max-width: 600px) {
+  .nav__link:first-child,
+  .nav__link:nth-child(2) {
+    display: none;
+  }
+}
 /* SMALL PHONES */
 
 @media (max-width: 480px) {
-  .donate {
-    display: none;
-  }
   .landing__page-heading {
     font-size: 40px;
   }
