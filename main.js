@@ -9,7 +9,7 @@ function getTodayDate() {
 
 async function main() {
   const times = await fetch(
-    'https://api.pray.zone/v2/times/this_month.json?city=wakefield'
+    "https://api.pray.zone/v2/times/this_month.json?city=wakefield"
   );
 
   const { results } = await times.json();
@@ -19,7 +19,7 @@ async function main() {
   // console.log(results.datetime);
   console.log(currentDayPrayerTimes);
 
-  const prayerListEl = document.body.querySelector('.prayer__list');
+  const prayerListEl = document.body.querySelector(".prayer__list");
   prayerListEl.innerHTML = prayerHTML(currentDayPrayerTimes);
 }
 
