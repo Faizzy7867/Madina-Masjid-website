@@ -549,8 +549,7 @@ i {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 120px;
-  padding: 0 16px;
+  padding: 0 16px 24px;
 }
 
 .contact__address--text {
@@ -682,7 +681,7 @@ i {
     flex-direction: column;
   }
   .google__maps {
-    width: 105%;
+    width: 100%;
   }
 }
 
@@ -725,6 +724,6 @@ i {
     flex-direction: column;
   }
   .google__maps {
-    width: 105%;
+    width: 100%;
   }
 }
