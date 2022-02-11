@@ -562,6 +562,12 @@ i {
   padding-top: 12px;
 }
 
+/* 
+
+Monthly Table
+
+*/
+
 @media (max-width: 1400px) {
   .about__wrapper {
     flex-direction: column-reverse;
