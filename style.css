@@ -131,14 +131,13 @@ li {
 }
 
 .landing__page-wrapper {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .main__img {
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   object-fit: cover;
   height: calc(100vh - 120px);
@@ -464,14 +463,6 @@ CONTACT
 
 */
 
-.contact__main--img {
-  width: 100%;
-  margin: 0 auto;
-  object-fit: cover;
-  height: calc(100vh - 500px);
-  filter: brightness(80%);
-}
-
 .contact {
   background-color: #f4f4f5;
 }
@@ -723,6 +714,7 @@ i {
   .contact__address {
     flex-direction: column;
   }
+
   .google__maps {
     width: 100%;
   }
