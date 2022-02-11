@@ -17,7 +17,7 @@ async function main() {
   const currentDayPrayerTimes = results.datetime[getTodayDate()].times;
 
   // console.log(results.datetime);
-  // console.log(currentDayPrayerTimes);
+  console.log(currentDayPrayerTimes);
 
   const prayerListEl = document.body.querySelector(".prayer__list");
   prayerListEl.innerHTML = prayerHTML(currentDayPrayerTimes);
@@ -40,7 +40,7 @@ function prayerHTML(prayer) {
     </div>
     <div class="prayer">
     <h2 class="prayer__title">Magrib</h2>
-    <h2 class="prayer__time">${prayer.Maghrib}</h2>
+    <h2 class="prayer__time">${prayer.Sunset}</h2>
     </div>
     <div class="prayer">
     <h2 class="prayer__title">Isha</h2>
