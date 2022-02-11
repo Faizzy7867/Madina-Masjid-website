@@ -501,6 +501,11 @@ CONTACT
 .contact__box--title {
   font-size: 36px;
   margin-bottom: 12px;
+  text-align: center;
+}
+
+.address {
+  text-align: center;
 }
 
 .contact__box--sub-title {
@@ -544,6 +549,11 @@ i {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 120px;
+  padding: 0 16px;
+}
+
+.contact__address--text {
+  padding-right: 8px;
 }
 
 .address {
@@ -574,6 +584,13 @@ i {
 
   .donate:before {
     display: none;
+  }
+}
+
+/* Point where contact email phone number enwsletter are not aligned */
+@media (max-width: 820px) {
+  .contact__box--title {
+    font-size: 28px;
   }
 }
 
