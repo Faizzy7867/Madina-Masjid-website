@@ -724,4 +724,23 @@ Monthly Table
   .google__maps {
     width: 100%;
   }
+
+  .nav__link:nth-child(3) {
+    visibility: visible;
+  }
+
+  .nav__link:first-child {
+    visibility: visible;
+    display: block;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav__list {
+    margin-right: 5px;
+  }
+
+  .logo {
+    margin: 0;
+  }
 }
