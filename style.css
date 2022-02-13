@@ -550,15 +550,16 @@ Monthly Table
 */
 table {
   table-layout: fixed;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 .tg {
   border-collapse: collapse;
   border-spacing: 0;
 }
 .tg td {
-  border-color: black;
-  border-style: solid;
-  border-width: 1px;
+  border: 1px solid black;
   font-family: Arial, sans-serif;
   font-size: 14px;
   overflow: hidden;
@@ -566,9 +567,7 @@ table {
   word-break: normal;
 }
 .tg th {
-  border-color: black;
-  border-style: solid;
-  border-width: 1px;
+  border: 1px solid black;
   font-family: Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
