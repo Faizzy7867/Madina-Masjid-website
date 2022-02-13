@@ -252,7 +252,7 @@ td {
 }
 
 tr:first-child {
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 1.1rem;
   text-transform: uppercase;
 }
@@ -589,7 +589,7 @@ Monthly Table
   text-align: center;
   vertical-align: top;
 }
-.tg .tg-f6ux {
+.tg .tg__green {
   background-color: #3a9b43;
   border-color: inherit;
   text-align: center;
