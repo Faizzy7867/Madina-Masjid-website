@@ -784,10 +784,14 @@ Media queries
 
 @media (max-width: 360px) {
   .nav__list {
-    margin-right: 5px;
+    margin-right: 16px;
   }
 
   .logo {
     margin: 0;
+  }
+
+  .home__button {
+    display: none;
   }
 }
