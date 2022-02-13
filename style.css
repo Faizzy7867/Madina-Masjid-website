@@ -251,16 +251,6 @@ td {
   padding: 1rem;
 }
 
-tr:first-child {
-  /* font-weight: bold; */
-  font-size: 1.1rem;
-  text-transform: uppercase;
-}
-
-tr:last-child {
-  font-size: 2.8rem;
-}
-
 span {
   font-size: 1.2rem;
   font-weight: bold;
@@ -591,6 +581,7 @@ Monthly Table
 }
 .tg .tg__green {
   background-color: #3a9b43;
+  font-weight: bold;
   border-color: inherit;
   text-align: center;
   vertical-align: top;
