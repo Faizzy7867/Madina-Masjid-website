@@ -557,13 +557,21 @@ Monthly Table
 
 */
 table {
-  table-layout: fixed;
-  overflow-x: auto;
+  table-layout: auto;
+  width: 150%;
+  overflow: auto;
   white-space: nowrap;
 }
+
 .tg {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.scrollit {
+  overflow-x: scroll;
+  overflow-y: scroll;
+  height: 100vh;
 }
 .tg td {
   border: 1px solid black;
@@ -783,6 +791,20 @@ Media queries
 }
 
 @media (max-width: 360px) {
+  .nav__list {
+    margin-right: 16px;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .home__button {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
   .nav__list {
     margin-right: 16px;
   }
