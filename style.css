@@ -235,10 +235,6 @@ li {
   font-weight: 400;
 }
 
-.monthly__timetable {
-  color: black;
-}
-
 table {
   line-height: 1;
   width: 100%;
@@ -259,8 +255,20 @@ span {
 }
 
 .monthly__timetable {
-  margin-bottom: 5px;
+  color: #0d1832;
+  border: 2px solid #3a9b43;
+  border-radius: 100px;
   text-decoration: none;
+  text-align: center;
+  color: #3a9b43;
+  padding: 8px;
+  margin-bottom: 24px;
+}
+
+.monthly__timetable:hover {
+  background: #32953c;
+  color: white;
+  transition: all 300ms ease;
 }
 
 /* ABOUT */
@@ -550,7 +558,6 @@ Monthly Table
 */
 table {
   table-layout: fixed;
-  display: block;
   overflow-x: auto;
   white-space: nowrap;
 }
