@@ -578,7 +578,6 @@ table {
 }
 
 .scrollit {
-  overflow-x: scroll;
   overflow-y: scroll;
   height: 100vh;
 }
