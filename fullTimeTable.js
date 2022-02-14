@@ -1,4 +1,5 @@
 const todayDate = new Date();
+const day = todayDate.getDate();
 const year = todayDate.getFullYear();
 
 let month = todayDate.getMonth() + 1;
@@ -18,7 +19,10 @@ async function fullTimeTable() {
 fullTimeTable();
 
 function timeTableHTML(value) {
-  return `<tr class="key__${value.Date}-${month}-${year}">
+  const currDate = `${day}-${month}-${year}`;
+  return `<tr class="${
+    currDate === `${value.Date}-${month}-2022` ? 'highlight' : ''
+  }">
     <td>${value.Date}/${month}/${year}</td>
     <td>${value.Date}</td>
     <td>${value.Fajr}</td>
@@ -29,12 +33,3 @@ function timeTableHTML(value) {
     <td>${value.Isha}</td>
   </tr>`;
 }
-
-function addHighlight() {
-  // const highlight = document.querySelector('tg__green');
-  const highlight = document.getElementsByClassName('key__1-2-2022');
-  console.log(highlight);
-  // highlight.classList += ' highlight';
-}
-
-addHighlight();
