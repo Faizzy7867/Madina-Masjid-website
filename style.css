@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -77,7 +77,7 @@ li {
 }
 
 .link__hover-effect:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -3px;
   height: 3px;
@@ -157,7 +157,7 @@ li {
   top: 0;
   left: 0;
   bottom: 0;
-  font-family: 'Amita', Sans-serif;
+  font-family: "Amita", Sans-serif;
   color: white;
   padding: 0 8px 300px 8px;
   font-size: 50px;
@@ -176,7 +176,7 @@ li {
   color: white;
   line-height: 2.1rem;
   font-size: 22px;
-  font-family: 'Amita', Sans-serif;
+  font-family: "Amita", Sans-serif;
 }
 
 /* TIMETABLE SECTION */
@@ -209,7 +209,7 @@ li {
   margin-top: 1.5rem;
   margin-bottom: 3rem;
   font-weight: 700;
-  font-family: 'Amita', Sans-serif;
+  font-family: "Amita", Sans-serif;
 }
 
 .prayer__list {
@@ -319,7 +319,7 @@ span {
   font-size: 44px;
   font-weight: 500;
   margin: 16px;
-  font-family: 'Amita', Sans-serif;
+  font-family: "Amita", Sans-serif;
 }
 
 .about__para {
@@ -354,7 +354,7 @@ span {
   font-size: 44px;
   font-weight: 700;
   margin: 16px;
-  font-family: 'Amita', Sans-serif;
+  font-family: "Amita", Sans-serif;
   text-align: center;
 }
 
@@ -366,7 +366,7 @@ span {
 }
 
 .pillar__title {
-  font-family: 'Amita', Sans-serif;
+  font-family: "Amita", Sans-serif;
   font-size: 24px;
   font-weight: 600;
   color: #32953c;
@@ -567,8 +567,8 @@ Monthly Table
 }
 
 table {
-  table-layout: auto;
-  width: 150%;
+  table-layout: fixed;
+  width: 100%;
   overflow: auto;
   white-space: nowrap;
 }
@@ -686,6 +686,15 @@ Media queries
     display: none;
   }
 }
+
+@media (max-width: 500px) {
+  table {
+    table-layout: auto;
+    width: 150%;
+    overflow: auto;
+    white-space: nowrap;
+  }
+}
 /* SMALL PHONES */
 
 @media (max-width: 480px) {
@@ -713,6 +722,13 @@ Media queries
 
   .donate:before {
     display: none;
+  }
+
+  table {
+    table-layout: auto;
+    width: 150%;
+    overflow: auto;
+    white-space: nowrap;
   }
 }
 
