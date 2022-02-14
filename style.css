@@ -561,6 +561,11 @@ i {
 Monthly Table
 
 */
+
+.monthly-timetable--wrapper {
+  flex-direction: column;
+}
+
 table {
   table-layout: auto;
   width: 150%;

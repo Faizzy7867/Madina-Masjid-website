@@ -56,24 +56,40 @@
           </div>
         </nav>
       </div>
-    </section>
     <section class="monthly-timetable container">
-      <div class="scrollit">
-        <table class="tg">
-          <thead>
-            <tr>
-              <th class="tg__green">Date</th>
-              <th class="tg__green">Day</th>
-              <th class="tg__green">Fajr</th>
-              <th class="tg__green">Sun Rise</th>
-              <th class="tg__green">Zuhr</th>
-              <th class="tg__green">Asr</th>
-              <th class="tg__green">Maghrib</th>
-              <th class="tg__green">Isha</th>
-            </tr>
-          </thead>
-          <tbody class="full-timetable__body"></tbody>
-        </table>
+      <div class="monthly-timetable--wrapper">
+          <select name="" id="month-selector">
+            <option value="" selected>Month</option>
+            <option value="">January</option>
+            <option value="">February</option>
+            <option value="">March</option>
+            <option value="">April</option>
+            <option value="">May</option>
+            <option value="">June</option>
+            <option value="">July</option>
+            <option value="">August</option>
+            <option value="">September</option>
+            <option value="">October</option>
+            <option value="">November</option>
+            <option value="">December</option>
+          </select>
+        <div class="scrollit">
+          <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg__green">Date</th>
+                <th class="tg__green">Day</th>
+                <th class="tg__green">Fajr</th>
+                <th class="tg__green">Sun Rise</th>
+                <th class="tg__green">Zuhr</th>
+                <th class="tg__green">Asr</th>
+                <th class="tg__green">Maghrib</th>
+                <th class="tg__green">Isha</th>
+              </tr>
+            </thead>
+            <tbody class="full-timetable__body"></tbody>
+          </table>
+        </div>
       </div>
     </section>
     <footer>
