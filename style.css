@@ -105,21 +105,6 @@ li {
   display: none;
 }
 
-/* .donate:before {
-  content: 'Donate';
-  text-transform: uppercase;
-  display: none;
-  visibility: hidden;
-  padding: 9px 11px;
-  color: #0d1832;
-  border: 2px solid #3a9b43;
-  border-radius: 100px;
-  text-decoration: none;
-  text-align: center;
-  color: #3a9b43;
-  font-weight: 500;
-} */
-
 .donate:hover {
   border-radius: 100px;
   background-color: #32953c;

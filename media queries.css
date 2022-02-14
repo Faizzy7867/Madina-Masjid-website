@@ -107,11 +107,6 @@
 }
 
 @media (max-width: 375px) {
-  /* .donate:before {
-    visibility: visible;
-    display: inline-block;
-  } */
-
   .contact__boxes {
     width: 165%;
     display: flex;
@@ -185,8 +180,8 @@
   }
 
   .nav__link:first-child {
-    visibility: visible;
-    display: block;
+    visibility: hidden;
+    display: none;
   }
 }
 
