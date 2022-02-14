@@ -9,15 +9,16 @@ async function fullTimeTable() {
   // console.log(data);
 
   const currMonth = data[month];
-  console.log(currMonth);
-  const ElFullTable = document.body.querySelector('.full-timetable__body');
+  // console.log(currMonth);
+  const ElFullTable = document.querySelector('.full-timetable__body');
+  // console.log(ElFullTable);
   ElFullTable.innerHTML = currMonth.map((time) => timeTableHTML(time)).join('');
 }
 
 fullTimeTable();
 
 function timeTableHTML(value) {
-  return `<tr>
+  return `<tr class="key__${value.Date}-${month}-${year}">
     <td>${value.Date}/${month}/${year}</td>
     <td>${value.Date}</td>
     <td>${value.Fajr}</td>
@@ -28,3 +29,12 @@ function timeTableHTML(value) {
     <td>${value.Isha}</td>
   </tr>`;
 }
+
+function addHighlight() {
+  // const highlight = document.querySelector('tg__green');
+  const highlight = document.getElementsByClassName('key__1-2-2022');
+  console.log(highlight);
+  // highlight.classList += ' highlight';
+}
+
+addHighlight();
