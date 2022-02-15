@@ -566,6 +566,7 @@ table {
   overflow-y: scroll;
   height: 100vh;
 }
+
 .tg td {
   border: 1px solid black;
   font-family: Arial, sans-serif;

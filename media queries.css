@@ -106,6 +106,34 @@
   }
 }
 
+@media (max-width: 360px) {
+  .nav__list {
+    margin-right: 16px;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .home__button {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .nav__list {
+    margin-right: 16px;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .home__button {
+    display: none;
+  }
+}
+
 @media (max-width: 375px) {
   .contact__boxes {
     width: 165%;
@@ -183,32 +211,9 @@
     visibility: hidden;
     display: none;
   }
-}
 
-@media (max-width: 360px) {
-  .nav__list {
-    margin-right: 16px;
-  }
-
-  .logo {
-    margin: 0;
-  }
-
-  .home__button {
-    display: none;
-  }
-}
-
-@media (max-width: 390px) {
-  .nav__list {
-    margin-right: 16px;
-  }
-
-  .logo {
-    margin: 0;
-  }
-
-  .home__button {
-    display: none;
+  .scrollit {
+    overflow-y: scroll;
+    height: 100vh;
   }
 }
