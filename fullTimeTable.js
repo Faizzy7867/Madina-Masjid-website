@@ -42,6 +42,15 @@ function timeTableHTML(value, selectedMonth) {
     dateNR = `${value.Date}th`;
   }
 
+  let timeAMPM = value.Zhur.slice(0, 2);
+  // console.log(timeAMPM);
+  if (timeAMPM === '11') {
+    timeAMPM = `${value.Zhur} am`;
+    console.log(timeAMPM);
+  } else {
+    timeAMPM = `${value.Zhur} pm`;
+  }
+
   return `<tr class="${
     currDate === `${value.Date}-${todayDate.getMonth() + 1}-2022`
       ? 'highlight'
@@ -49,12 +58,12 @@ function timeTableHTML(value, selectedMonth) {
   }">
     <td>${value.Date}/${month}/${year}</td>
     <td>${dateNR}</td>
-    <td>${value.Fajr}</td>
-    <td>${value.Sunrise}</td>
-    <td>${value.Zhur}</td>
-    <td>${value.Asar}</td>
-    <td>${value.Sunset}</td>
-    <td>${value.Isha}</td>
+    <td>${value.Fajr} am</td>
+    <td>${value.Sunrise} am</td>
+    <td>${timeAMPM}</td>
+    <td>${value.Asar} pm</td>
+    <td>${value.Sunset} pm</td>
+    <td>${value.Isha} pm</td>
   </tr>`;
 }
 
