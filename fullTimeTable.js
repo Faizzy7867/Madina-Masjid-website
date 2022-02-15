@@ -68,6 +68,4 @@ function timeTableHTML(value, selectedMonth) {
 }
 
 //sets the select button to current month when routing from home to full timetable
-if (document.getElementById('month-selector').value === '0') {
-  document.getElementById('month-selector').value = month;
-}
+document.getElementById('month-selector').value = month;
