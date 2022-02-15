@@ -3,6 +3,14 @@ const day = todayDate.getDate();
 const year = todayDate.getFullYear();
 let month = todayDate.getMonth() + 1;
 
+//init local storage of current month if there is none
+if (localStorage.getItem('month') === null) {
+  localStorage.setItem('month', month);
+}
+
+//init selector name
+document.getElementById('month-selector').value = localStorage.getItem('month');
+
 async function fullTimeTable(selectedMonth) {
   const promise = await fetch('./assets/fullTimeTable.json');
   const data = await promise.json();
@@ -12,7 +20,7 @@ async function fullTimeTable(selectedMonth) {
     ? (currMonth = data[selectedMonth])
     : (currMonth = data[month]);
   //console.log(currMonth);
-  //console.log(selectedMonth)
+  // console.log(selectedMonth);
   const ElFullTable = document.querySelector('.full-timetable__body');
   // console.log(ElFullTable);
   ElFullTable.innerHTML = currMonth
@@ -22,6 +30,12 @@ async function fullTimeTable(selectedMonth) {
 
 function filterMonths(event) {
   fullTimeTable(event.target.value);
+  localStorage.setItem(
+    'month',
+    document.getElementById('month-selector').value
+  );
+  document.getElementById('month-selector').value =
+    localStorage.getItem('month');
 }
 
 fullTimeTable();
@@ -29,7 +43,7 @@ fullTimeTable();
 function timeTableHTML(value, selectedMonth) {
   selectedMonth != undefined
     ? (month = selectedMonth)
-    : (month = todayDate.getMonth() + 1);
+    : (month = localStorage.getItem('month'));
   const currDate = `${day}-${month}-${year}`;
 
   // adds st, nd, th to days
@@ -66,6 +80,3 @@ function timeTableHTML(value, selectedMonth) {
     <td>${value.Isha} pm</td>
   </tr>`;
 }
-
-//sets the select button to current month when routing from home to full timetable
-document.getElementById('month-selector').value = month;
