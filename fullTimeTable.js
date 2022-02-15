@@ -31,13 +31,24 @@ function timeTableHTML(value, selectedMonth) {
     ? (month = selectedMonth)
     : (month = todayDate.getMonth() + 1);
   const currDate = `${day}-${month}-${year}`;
+
+  // adds st, nd, th to days
+  let dateNR;
+  if (value.Date === '1' || value.Date === '21' || value.Date === '31') {
+    dateNR = `${value.Date}st`;
+  } else if (value.Date === '2' || value.Date === '22') {
+    dateNR = `${value.Date}nd`;
+  } else {
+    dateNR = `${value.Date}th`;
+  }
+
   return `<tr class="${
     currDate === `${value.Date}-${todayDate.getMonth() + 1}-2022`
       ? 'highlight'
       : ''
   }">
     <td>${value.Date}/${month}/${year}</td>
-    <td>${value.Date}</td>
+    <td>${dateNR}</td>
     <td>${value.Fajr}</td>
     <td>${value.Sunrise}</td>
     <td>${value.Zhur}</td>
