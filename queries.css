@@ -30,8 +30,25 @@
   }
 }
 
+@media (max-width: 850px) {
+  .contact__address {
+    flex-direction: column;
+  }
+}
+
 /* Small phones, tablets, large smart phones */
 @media (max-width: 768px) {
+  table {
+    width: 170%;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .scrollit {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+
   .pillar__wrapper {
     flex-direction: column;
   }
@@ -54,6 +71,12 @@
   }
 }
 
+@media (max-width: 675px) {
+  .google__maps {
+    width: 90vw;
+  }
+}
+
 @media (max-width: 600px) {
   .nav__link:first-child,
   .nav__link:nth-child(2) {
@@ -61,15 +84,19 @@
   }
 }
 
+/* SMALL PHONES */
+
 @media (max-width: 500px) {
-  table {
-    table-layout: auto;
-    width: 150%;
-    overflow: auto;
-    white-space: nowrap;
+  .phone {
+    font-size: 16px;
+  }
+  .contact__box--sub-title {
+    font-size: 16px;
+  }
+  .email {
+    padding: 4px 16px;
   }
 }
-/* SMALL PHONES */
 
 @media (max-width: 480px) {
   .about__img {
@@ -96,13 +123,6 @@
 
   .donate:before {
     display: none;
-  }
-
-  table {
-    table-layout: auto;
-    width: 150%;
-    overflow: auto;
-    white-space: nowrap;
   }
 }
 
