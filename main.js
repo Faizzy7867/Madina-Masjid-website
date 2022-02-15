@@ -1,3 +1,6 @@
+const todayDate = new Date();
+const month = todayDate.getMonth() + 1;
+
 async function main() {
   const promise = await fetch('./assets/JamaatTime.json');
   const data = await promise.json();
@@ -35,4 +38,10 @@ function prayerHTML(prayer) {
     <h2 class="prayer__title">Isha</h2>
     <h2 class="prayer__time">${prayer.Isha}</h2>
     </div>`;
+}
+
+function setToCurrentMonth() {
+  localStorage.setItem('month', month);
+  console.log('set month');
+  console.log('button clicked');
 }
