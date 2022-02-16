@@ -43,3 +43,7 @@ function prayerHTML(prayer) {
 function setToCurrentMonth() {
   localStorage.setItem('month', month);
 }
+
+function toggleMenu() {
+  document.body.classList.toggle('menu--open');
+}
