@@ -23,16 +23,21 @@
   }
 }
 
-/* Point where contact email phone number newsletter are not aligned */
 @media (max-width: 820px) {
   .contact__box--title {
     font-size: 28px;
+  }
+  .address {
+    margin-bottom: 2rem;
   }
 }
 
 @media (max-width: 850px) {
   .contact__address {
     flex-direction: column;
+  }
+  .address {
+    margin-bottom: 2rem;
   }
 }
 
@@ -78,6 +83,7 @@
   .ionicons {
     display: block;
   }
+
   .nav__list,
   .donate {
     display: none;
@@ -130,6 +136,15 @@
 
   .donate:before {
     display: none;
+  }
+}
+
+@media (max-width: 475px) {
+  .contact__box--title {
+    font-size: 1.6rem;
+  }
+  .contact__box--sub-title {
+    font-size: 1.2rem;
   }
 }
 
@@ -191,19 +206,10 @@
   .donate--small-text {
     display: inline-block;
   }
+
   .donate--full-text {
     display: none;
   }
-
-  /* .donate__after {
-    display: flex;
-    justify-content: center;
-  }
-
-  .donate:before {
-    visibility: visible;
-    display: inline-block;
-  } */
 
   .contact__boxes {
     width: 165%;
