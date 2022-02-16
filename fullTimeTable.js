@@ -52,6 +52,8 @@ function timeTableHTML(value, selectedMonth) {
     dateNR = `${value.Date}st`;
   } else if (value.Date === '2' || value.Date === '22') {
     dateNR = `${value.Date}nd`;
+  } else if (value.Date === '3') {
+    dateNR = `${value.Date}rd`;
   } else {
     dateNR = `${value.Date}th`;
   }
