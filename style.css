@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -77,7 +77,7 @@ li {
 }
 
 .link__hover-effect:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -3px;
   height: 3px;
@@ -142,7 +142,7 @@ li {
   top: 0;
   left: 0;
   bottom: 0;
-  font-family: 'Amita', Sans-serif;
+  font-family: "Amita", Sans-serif;
   color: white;
   padding: 0 8px 300px 8px;
   font-size: 50px;
@@ -161,7 +161,7 @@ li {
   color: white;
   line-height: 2.1rem;
   font-size: 22px;
-  font-family: 'Amita', Sans-serif;
+  font-family: "Amita", Sans-serif;
 }
 
 /* TIMETABLE SECTION */
@@ -194,7 +194,7 @@ li {
   margin-top: 1.5rem;
   margin-bottom: 3rem;
   font-weight: 700;
-  font-family: 'Amita', Sans-serif;
+  font-family: "Amita", Sans-serif;
 }
 
 .prayer__list {
@@ -304,7 +304,7 @@ span {
   font-size: 44px;
   font-weight: 500;
   margin: 16px;
-  font-family: 'Amita', Sans-serif;
+  font-family: "Amita", Sans-serif;
 }
 
 .about__para {
@@ -339,7 +339,7 @@ span {
   font-size: 44px;
   font-weight: 700;
   margin: 16px;
-  font-family: 'Amita', Sans-serif;
+  font-family: "Amita", Sans-serif;
   text-align: center;
 }
 
@@ -351,7 +351,7 @@ span {
 }
 
 .pillar__title {
-  font-family: 'Amita', Sans-serif;
+  font-family: "Amita", Sans-serif;
   font-size: 24px;
   font-weight: 600;
   color: #32953c;
@@ -601,4 +601,26 @@ table {
   border-color: inherit;
   text-align: left;
   vertical-align: top;
+}
+
+/* UPDATES PAGE */
+.updates__wrapper {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.updates {
+  text-align: center;
+  margin: 5.4rem;
+  font-size: 2.4rem;
+  border: 2px solid #3a9b43;
+  border-radius: 100px;
+  padding: 8px;
+}
+
+.fb-page {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
 }
