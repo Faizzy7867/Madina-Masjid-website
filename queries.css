@@ -46,7 +46,6 @@
 
   .scrollit {
     overflow-y: scroll;
-    height: 100vh;
   }
 
   .pillar__wrapper {
@@ -234,6 +233,5 @@
 
   .scrollit {
     overflow-y: scroll;
-    height: 100vh;
   }
 }
