@@ -248,6 +248,12 @@ li {
 }
 
 /* Prayer Time Table */
+
+#month-selector {
+  width: 100px;
+  height: 30px;
+}
+
 .prayer__timetable--row {
   max-width: 1200px;
   width: 100%;
@@ -622,7 +628,7 @@ Monthly Table
 table {
   table-layout: fixed;
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
   white-space: nowrap;
 }
 
