@@ -1,7 +1,7 @@
 const todayDate = new Date();
 const day = todayDate.getDate();
 const year = todayDate.getFullYear();
-console.log(year);
+// console.log(year);
 let month = todayDate.getMonth() + 1;
 
 //init local storage of current month if there is none

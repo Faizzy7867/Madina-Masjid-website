@@ -18,6 +18,7 @@ html {
 .highlight {
   background-color: #d3b362;
   border-color: #d3b362;
+  font-weight: bold;
 }
 
 /* NAV BAR */
