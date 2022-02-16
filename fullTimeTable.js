@@ -1,6 +1,7 @@
 const todayDate = new Date();
 const day = todayDate.getDate();
 const year = todayDate.getFullYear();
+console.log(year);
 let month = todayDate.getMonth() + 1;
 
 //init local storage of current month if there is none
@@ -57,7 +58,7 @@ function timeTableHTML(value, selectedMonth) {
   ];
 
   currParsedDate = new Date(
-    `2022-${month.length === 1 ? `0${month}` : month}-${value.Date}`
+    `${year}-${month.length === 1 ? `0${month}` : month}-${value.Date}`
   );
   let dateNR = weekday[currParsedDate.getDay()];
 
@@ -71,7 +72,7 @@ function timeTableHTML(value, selectedMonth) {
   }
 
   return `<tr class="${
-    currDate === `${value.Date}-${todayDate.getMonth() + 1}-2022`
+    currDate === `${value.Date}-${todayDate.getMonth() + 1}-${year}`
       ? 'highlight'
       : ''
   }">
