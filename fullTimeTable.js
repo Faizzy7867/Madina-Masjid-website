@@ -46,23 +46,26 @@ function timeTableHTML(value, selectedMonth) {
     : (month = localStorage.getItem('month'));
   const currDate = `${day}-${month}-${year}`;
 
-  // adds st, nd, th to days
-  let dateNR;
-  if (value.Date === '1' || value.Date === '21' || value.Date === '31') {
-    dateNR = `${value.Date}st`;
-  } else if (value.Date === '2' || value.Date === '22') {
-    dateNR = `${value.Date}nd`;
-  } else if (value.Date === '3') {
-    dateNR = `${value.Date}rd`;
-  } else {
-    dateNR = `${value.Date}th`;
-  }
+  const weekday = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+  ];
+
+  currParsedDate = new Date(
+    `2022-${month.length === 1 ? `0${month}` : month}-${value.Date}`
+  );
+  let dateNR = weekday[currParsedDate.getDay()];
 
   let timeAMPM = value.Zhur.slice(0, 2);
   // console.log(timeAMPM);
   if (timeAMPM === '11') {
     timeAMPM = `${value.Zhur} am`;
-    console.log(timeAMPM);
+    // console.log(timeAMPM);
   } else {
     timeAMPM = `${value.Zhur} pm`;
   }

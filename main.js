@@ -42,6 +42,4 @@ function prayerHTML(prayer) {
 
 function setToCurrentMonth() {
   localStorage.setItem('month', month);
-  console.log('set month');
-  console.log('button clicked');
 }
