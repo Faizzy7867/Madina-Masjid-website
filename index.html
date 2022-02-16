@@ -12,6 +12,7 @@
     <title>Madina Masjid</title>
   </head>
   <body>
+    <nav>
       <div class="container">
         <nav class="navigation">
           <figure>
@@ -61,11 +62,34 @@
             ><div class="donate--full-text">DONATE NOW</div>
             <div class="donate--small-text">DONATE</div>
           </a>
-          <ion-icon name="menu-outline"></ion-icon>
-          <ion-icon name="close-outline"></ion-icon>
+            <button class="ionicons" onclick="toggleMenu()">
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+            <div class="menu__backdrop" style="visibility: hidden;">
+              <button class="ionicons btn__menu--close" onclick="toggleMenu()">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+              <ul class="menu__links">
+                <li class="menu__list">
+                  <a href="#" class="menu__link" onclick="toggleMenu()">Home</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#features" class="menu__link" onclick="toggleMenu()">Updates</a>
+                </li>
+                <li class="menu__list">
+                  <a class="menu__link" onclick="toggleMenu()">About</a>
+                </li>
+                <li class="menu__list">
+                  <a class="menu__link" onclick="toggleMenu()">Donate Now</a>
+                </li>
+                <li class="menu__list">
+                  <a class="menu__link" onclick="toggleMenu()">Contacts</a>
+                </li>
+              </ul>
+            </div>          
+          </div>
         </div>
-        </nav>
-      </div>
+      </nav>
     </section>
     <section class="container__landing-page">
       <div class="landing__page-wrapper">

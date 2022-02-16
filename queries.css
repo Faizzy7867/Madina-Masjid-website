@@ -74,6 +74,14 @@
   .google__maps {
     width: 90vw;
   }
+
+  .ionicons {
+    display: block;
+  }
+  .nav__list,
+  .donate {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -187,7 +195,7 @@
     display: none;
   }
 
-  .donate__after {
+  /* .donate__after {
     display: flex;
     justify-content: center;
   }
@@ -195,7 +203,7 @@
   .donate:before {
     visibility: visible;
     display: inline-block;
-  }
+  } */
 
   .contact__boxes {
     width: 165%;

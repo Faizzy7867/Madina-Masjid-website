@@ -86,3 +86,7 @@ function timeTableHTML(value, selectedMonth) {
     <td>${value.Isha} pm</td>
   </tr>`;
 }
+
+function toggleMenu() {
+  document.body.classList.toggle('menu--open');
+}
