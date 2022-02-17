@@ -42,6 +42,7 @@
     width: 170%;
     overflow: auto;
     white-space: nowrap;
+    margin: 22px;
   }
 
   .scrollit {
