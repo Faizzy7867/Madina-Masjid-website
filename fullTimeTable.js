@@ -52,6 +52,7 @@ function timeTableHTML(value, selectedMonth) {
   currParsedDate = new Date(
     `${year}-${month.length === 1 ? `0${month}` : month}-${value.Date}`
   );
+  console.log(currParsedDate);
   let dateNR = weekday[currParsedDate.getDay()];
 
   let timeAMPM = value.Zhur.slice(0, 2);
