@@ -6,13 +6,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+html,
 body {
   overflow-x: hidden;
-}
-
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+  width: 100%;
 }
 
 .highlight {
@@ -248,12 +245,6 @@ li {
 }
 
 /* Prayer Time Table */
-
-#month-selector {
-  width: 100px;
-  height: 30px;
-}
-
 .prayer__timetable--row {
   max-width: 1200px;
   width: 100%;
@@ -621,6 +612,11 @@ Monthly Table
 
 */
 
+#month-selector {
+  width: 100px;
+  height: 30px;
+}
+
 .monthly-timetable--wrapper {
   flex-direction: column;
 }
@@ -628,7 +624,7 @@ Monthly Table
 table {
   table-layout: fixed;
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
   white-space: nowrap;
 }
 
