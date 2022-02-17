@@ -8,9 +8,11 @@
 
 html,
 body {
-  overflow: hidden;
-  overflow-y: scroll;
   overflow-x: hidden;
+}
+
+body {
+  position: relative;
 }
 
 .highlight {
