@@ -44,6 +44,15 @@ function setToCurrentMonth() {
   localStorage.setItem("month", month);
 }
 
-function toggleMenu() {
-  document.body.classList.toggle("menu--open");
-}
+// BURGER MENU
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
+// Set current year
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
