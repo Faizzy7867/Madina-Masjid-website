@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-html,
 body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -17,51 +21,63 @@ body {
   font-weight: bold;
 }
 
-/* NAV BAR */
-.container {
-  width: 100%;
-  max-width: 120rem;
-  padding: 0 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 120px;
-  width: 100%;
-}
-
-.logo {
-  width: 100px;
-  cursor: pointer;
-}
-
-.nav__lists--wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.nav__lists {
-  display: flex;
-  transition: all 300ms ease-in-out;
-}
-
-li {
+a,
+ul {
+  text-decoration: none;
   list-style-type: none;
 }
 
-.nav__list {
-  margin-right: 16px;
+/* NAV BAR */
+.container__landing-page {
+  max-width: 100vh;
+}
+.logo {
+  height: 6.6rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  justify-content: end;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
   text-decoration: none;
-  font-size: 20px;
-  color: #3a9b43;
+  color: #333;
   font-weight: 500;
-  pad: 8px;
+  font-size: 1.4rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #32953c;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
 }
 
 .link__hover-effect {
@@ -73,7 +89,7 @@ li {
 }
 
 .link__hover-effect:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -3px;
   height: 3px;
@@ -110,16 +126,28 @@ li {
   text-decoration: under;
 }
 
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 3.8rem;
+  width: 3.8rem;
+  color: #32953c;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /* LANDING PAGE */
 
 .landing-page {
-  height: calc(100vh - nav);
-}
-
-.landing__page-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 0 3.2rem;
 }
 
 .main__img {
@@ -138,7 +166,7 @@ li {
   top: 0;
   left: 0;
   bottom: 0;
-  font-family: 'Amita', Sans-serif;
+  font-family: "Amita", Sans-serif;
   color: white;
   padding: 0 8px 300px 8px;
   font-size: 50px;
@@ -157,73 +185,7 @@ li {
   color: white;
   line-height: 2.1rem;
   font-size: 22px;
-  font-family: 'Amita', Sans-serif;
-}
-
-/* MODAL */
-
-.menu__backdrop {
-  position: absolute;
-  background-color: #242424;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  visibility: hidden;
-  transition: all 550ms ease;
-  transform: translate(100%);
-}
-
-.menu--open {
-  max-height: 100vh;
-  overflow: hidden;
-}
-
-.menu__links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.menu--open .menu__backdrop {
-  visibility: visible !important;
-  opacity: 1;
-  transform: translate(0);
-}
-
-.menu__list {
-  padding: 32px 0;
-}
-
-.menu__link {
-  color: white;
-  font-size: 40px;
-  text-decoration: none;
-  cursor: pointer;
-}
-.menu__link:active {
-  text-decoration: underline;
-}
-
-.btn__menu--close {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  padding: 8px;
-  color: white;
-}
-
-.ionicons {
-  display: flex;
-  font-size: 40px;
-  color: #3a9b43;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  display: none;
+  font-family: "Amita", Sans-serif;
 }
 
 /* TIMETABLE SECTION */
@@ -256,7 +218,7 @@ li {
   margin-top: 1.5rem;
   margin-bottom: 3rem;
   font-weight: 700;
-  font-family: 'Amita', Sans-serif;
+  font-family: "Amita", Sans-serif;
 }
 
 .prayer__list {
@@ -366,7 +328,7 @@ span {
   font-size: 44px;
   font-weight: 500;
   margin: 16px;
-  font-family: 'Amita', Sans-serif;
+  font-family: "Amita", Sans-serif;
 }
 
 .about__para {
@@ -401,7 +363,7 @@ span {
   font-size: 44px;
   font-weight: 700;
   margin: 16px;
-  font-family: 'Amita', Sans-serif;
+  font-family: "Amita", Sans-serif;
   text-align: center;
 }
 
@@ -413,7 +375,7 @@ span {
 }
 
 .pillar__title {
-  font-family: 'Amita', Sans-serif;
+  font-family: "Amita", Sans-serif;
   font-size: 24px;
   font-weight: 600;
   color: #32953c;
@@ -544,7 +506,6 @@ CONTACT
   font-size: 36px;
   margin-bottom: 12px;
   text-align: center;
-  font-weight: 500;
 }
 
 .address {
@@ -554,7 +515,6 @@ CONTACT
 .contact__box--sub-title {
   margin-bottom: 32px;
   font-size: 18px;
-  font-weight: 400;
 }
 
 .email {
@@ -611,11 +571,6 @@ Monthly Table
 
 */
 
-#month-selector {
-  width: 100px;
-  height: 30px;
-}
-
 .monthly-timetable--wrapper {
   flex-direction: column;
 }
@@ -633,7 +588,7 @@ table {
 }
 
 .scrollit {
-  overflow-y: scroll;
+  overflow-y: hidden;
   height: calc(100vh - nav);
 }
 
@@ -670,21 +625,4 @@ table {
   border-color: inherit;
   text-align: left;
   vertical-align: top;
-}
-
-/* UPDATES PAGE */
-
-.updates__wrapper {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-}
-
-.updates {
-  text-align: center;
-  margin: 5.4rem;
-  font-size: 2.4rem;
-  border: 2px solid #3a9b43;
-  border-radius: 100px;
-  padding: 8px;
 }
