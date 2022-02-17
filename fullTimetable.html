@@ -7,56 +7,64 @@
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./queries.css" />
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=nvJJjCgTUJL7lAlik4xn9vouHNyV3hf6sF-3ERh_kiDsIxUMMYMq8DmUdR2a_e4SAXJ2oxjwmG6FDD9wKWKRBA" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://ff.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9vbW5pZm9vZC1mYWl6YW4ubmV0bGlmeS5hcHAv"/><script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
     <title>Madina Masjid</title>
   </head>
-
   <body>
-    <!-- <section class="landing-page">
-      <div class="container">
-        <nav class="navigation">
-          <figure>
-            <a href="./index.html">
-              <img class="logo" src="./assets/logo.jpg" alt="Masjid Logo" />
-            </a>
-          </figure>
-          <div class="nav__lists--wrapper">
-            <ul class="nav__lists">
-              <li class="nav__link">
-                <a
-                  class="nav__list link__hover-effect link__hover-effect--black nav__hidden home__button"
-                  href="./index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav__link">
-                <a
-                  class="nav__list link__hover-effect link__hover-effect--black nav__hidden"
-                  href="./index.html#about"
-                  >About</a
-                >
-              </li>
-              <li class="nav__link">
-                <a
-                  class="nav__list link__hover-effect link__hover-effect--black"
-                  href="./contact.html"
-                  >Contact</a
-                >
-              </li>
-            </ul>
+    <header class="header">
+      <a href="#">
+        <img
+        class="logo"
+        src="./assets/logo.jpg"
+        alt="Masjid Logo"
+        />
+      </a>
+     <nav class="main-nav">
+       <ul class="main-nav-list">
+         <li>
+           <a
+           class="main-nav-link link__hover-effect link__hover-effect--black nav__hidden home__button"
+           href="./index.html"
+           >Home</a
+           >
+          </li>
+          <li>
             <a
-              class="donate donate__after"
-              href="https://donate.justgiving.com/donation-amount?uri=aHR0cHM6Ly9kb25hdGUtYXBpLmp1c3RnaXZpbmcuY29tL2FwaS9kb25hdGlvbnMvMjFhMDAzZjdmOGI0NDBlYjhjYzIyZGMxNzgzODQ1ZWQ="
-              target="_blank"
-              ><div class="donate--full-text">DONATE NOW</div>
-              <div class="donate--small-text">DONATE</div>
-            </a>
-          </div>
-        </nav>
-      </div> -->
+            class="main-nav-link link__hover-effect link__hover-effect--black nav__hidden"
+            href="./index.html#about"
+            >About</a
+            >
+          </li>
+          <li>
+            <a
+            class="main-nav-link link__hover-effect link__hover-effect--black"
+            href="./contact.html"
+            >Contact</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link link__hover-effect l donate " href="https://donate.justgiving.com/donation-amount?uri=aHR0cHM6Ly9kb25hdGUtYXBpLmp1c3RnaXZpbmcuY29tL2FwaS9kb25hdGlvbnMvMjFhMDAzZjdmOGI0NDBlYjhjYzIyZGMxNzgzODQ1ZWQ=">DONATE</a>
+          </li>
+        </ul>
+      </a>
+    </nav> 
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
+  </header>
     <section class="monthly-timetable container">
       <div class="monthly-timetable--wrapper">
         <select name="" id="month-selector" onchange="filterMonths(event)">
