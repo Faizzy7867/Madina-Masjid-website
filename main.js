@@ -2,7 +2,7 @@ const todayDate = new Date();
 const month = todayDate.getMonth() + 1;
 
 async function main() {
-  const promise = await fetch('./assets/JamaatTime.json');
+  const promise = await fetch("./assets/JamaatTime.json");
   const data = await promise.json();
 
   const todayDate = new Date();
@@ -11,7 +11,7 @@ async function main() {
   const currMonth = data[month][day];
   // console.log(currMonth);
 
-  const Elprayer = document.body.querySelector('.prayer__list');
+  const Elprayer = document.body.querySelector(".prayer__list");
   Elprayer.innerHTML = prayerHTML(currMonth);
 }
 
@@ -41,5 +41,45 @@ function prayerHTML(prayer) {
 }
 
 function setToCurrentMonth() {
-  localStorage.setItem('month', month);
+  localStorage.setItem("month", month);
 }
+
+// BURGER MENU
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
+// Set current year
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
+
+///////////////////////////////////////////////////////////
+// Sticky navigation
+
+// const sectionHeroEl = document.querySelector(".section-hero");
+
+// const obs = new IntersectionObserver(
+//   function (entries) {
+//     const ent = entries[0];
+//     console.log(ent);
+
+//     if (ent.isIntersecting === false) {
+//       document.body.classList.add("sticky");
+//     }
+
+//     if (ent.isIntersecting === true) {
+//       document.body.classList.remove("sticky");
+//     }
+//   },
+//   {
+//     // In the viewport
+//     root: null,
+//     threshold: 0,
+//     rootMargin: "-80px",
+//   }
+// );
+// obs.observe(sectionHeroEl);
