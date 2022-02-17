@@ -23,21 +23,16 @@
   }
 }
 
+/* Point where contact email phone number newsletter are not aligned */
 @media (max-width: 820px) {
   .contact__box--title {
     font-size: 28px;
-  }
-  .address {
-    margin-bottom: 2rem;
   }
 }
 
 @media (max-width: 850px) {
   .contact__address {
     flex-direction: column;
-  }
-  .address {
-    margin-bottom: 2rem;
   }
 }
 
@@ -51,7 +46,6 @@
 
   .scrollit {
     overflow-y: scroll;
-    height: 100vh;
   }
 
   .pillar__wrapper {
@@ -74,20 +68,61 @@
   .donate:before {
     display: none;
   }
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 675px) {
   .google__maps {
     width: 90vw;
-  }
-
-  .ionicons {
-    display: block;
-  }
-
-  .nav__list,
-  .donate {
-    display: none;
   }
 }
 
@@ -132,20 +167,11 @@
     width: calc(100%);
   }
   .donate {
-    padding: 9px 11px;
+    padding: 12px 24px;
   }
 
   .donate:before {
     display: none;
-  }
-}
-
-@media (max-width: 475px) {
-  .contact__box--title {
-    font-size: 1.6rem;
-  }
-  .contact__box--sub-title {
-    font-size: 1.2rem;
   }
 }
 
@@ -207,9 +233,18 @@
   .donate--small-text {
     display: inline-block;
   }
-
   .donate--full-text {
     display: none;
+  }
+
+  .donate__after {
+    display: flex;
+    justify-content: center;
+  }
+
+  .donate:before {
+    visibility: visible;
+    display: inline-block;
   }
 
   .contact__boxes {
