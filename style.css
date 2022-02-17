@@ -11,10 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  position: relative;
-}
-
 .highlight {
   background-color: #d3b362;
   border-color: #d3b362;
