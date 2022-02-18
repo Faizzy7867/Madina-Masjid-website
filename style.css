@@ -561,7 +561,7 @@ i {
   padding-right: 8px;
 }
 
-.fa-map-marked-alt {
+.map__icon {
   display: flex;
   justify-content: center;
 }
