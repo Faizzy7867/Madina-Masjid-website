@@ -13,7 +13,7 @@ if (localStorage.getItem('month') === null) {
 document.getElementById('month-selector').value = localStorage.getItem('month');
 
 async function fullTimeTable(selectedMonth) {
-  const promise = await fetch('./assets/fullTimeTable.json');
+  const promise = await fetch('./assets/FullTimeTable.json');
   const data = await promise.json();
   //console.log(data);
   let currMonth = 0;
