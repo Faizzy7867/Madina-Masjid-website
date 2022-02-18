@@ -51,6 +51,7 @@ ul {
   align-items: center;
   gap: 2.4rem;
   justify-content: end;
+  padding-right: 14px;
 }
 
 .main-nav-link:link,
@@ -133,6 +134,7 @@ ul {
   background: none;
   cursor: pointer;
   display: none;
+  margin-right: 12px;
 }
 
 .icon-mobile-nav {
@@ -577,6 +579,11 @@ i {
 Monthly Table
 
 */
+#month-selector {
+  margin: 22px;
+  width: 10em;
+  padding: 3px;
+}
 
 .monthly-timetable--wrapper {
   flex-direction: column;
