@@ -5,15 +5,15 @@ const year = todayDate.getFullYear();
 let month = todayDate.getMonth() + 1;
 
 //init local storage of current month if there is none
-if (localStorage.getItem("month") === null) {
-  localStorage.setItem("month", month);
+if (localStorage.getItem('month') === null) {
+  localStorage.setItem('month', month);
 }
 
 //init selector name
-document.getElementById("month-selector").value = localStorage.getItem("month");
+document.getElementById('month-selector').value = localStorage.getItem('month');
 
 async function fullTimeTable(selectedMonth) {
-  const promise = await fetch("./assets/fullTimeTable.json");
+  const promise = await fetch('./assets/fullTimeTable.json');
   const data = await promise.json();
   //console.log(data);
   let currMonth = 0;
@@ -22,21 +22,21 @@ async function fullTimeTable(selectedMonth) {
     : (currMonth = data[month]);
   //console.log(currMonth);
   // console.log(selectedMonth);
-  const ElFullTable = document.querySelector(".full-timetable__body");
+  const ElFullTable = document.querySelector('.full-timetable__body');
   // console.log(ElFullTable);
   ElFullTable.innerHTML = currMonth
     .map((time) => timeTableHTML(time, selectedMonth))
-    .join("");
+    .join('');
 }
 
 function filterMonths(event) {
   fullTimeTable(event.target.value);
   localStorage.setItem(
-    "month",
-    document.getElementById("month-selector").value
+    'month',
+    document.getElementById('month-selector').value
   );
-  document.getElementById("month-selector").value =
-    localStorage.getItem("month");
+  document.getElementById('month-selector').value =
+    localStorage.getItem('month');
 }
 
 fullTimeTable();
@@ -44,11 +44,14 @@ fullTimeTable();
 function timeTableHTML(value, selectedMonth) {
   selectedMonth != undefined
     ? (month = selectedMonth)
-    : (month = localStorage.getItem("month"));
+    : (month = localStorage.getItem('month'));
   const currDate = `${day}-${month}-${year}`;
 
-  const weekday = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+  const weekday = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
 
+  // currParsedDate = new Date(
+  //   `${year}-${month.length === 1 ? `0${month}` : month}-${value.Date}`
+  // );
   currParsedDate = new Date(
     `${year}-${month.length === 1 ? `0${month}` : month}-${value.Date}`
   );
@@ -57,7 +60,7 @@ function timeTableHTML(value, selectedMonth) {
 
   let timeAMPM = value.Zhur.slice(0, 2);
   // console.log(timeAMPM);
-  if (timeAMPM === "11") {
+  if (timeAMPM === '11') {
     timeAMPM = `${value.Zhur} am`;
     // console.log(timeAMPM);
   } else {
@@ -66,11 +69,11 @@ function timeTableHTML(value, selectedMonth) {
 
   return `<tr class="${
     currDate === `${value.Date}-${todayDate.getMonth() + 1}-${year}`
-      ? "highlight"
-      : ""
+      ? 'highlight'
+      : ''
   }">
     <td>${value.Date}/${month}/${year}</td>
-    <td>${dateNR}</td>
+    <td>${currParsedDate}</td>
     <td>${value.Fajr} am</td>
     <td>${value.Sunrise} am</td>
     <td>${timeAMPM}</td>
@@ -81,12 +84,12 @@ function timeTableHTML(value, selectedMonth) {
 }
 
 function toggleMenu() {
-  document.body.classList.toggle("menu--open");
+  document.body.classList.toggle('menu--open');
 }
 
-const btnNavEl = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector(".header");
+const btnNavEl = document.querySelector('.btn-mobile-nav');
+const headerEl = document.querySelector('.header');
 
-btnNavEl.addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
+btnNavEl.addEventListener('click', function () {
+  headerEl.classList.toggle('nav-open');
 });
