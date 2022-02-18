@@ -47,28 +47,15 @@ function timeTableHTML(value, selectedMonth) {
     : (month = localStorage.getItem('month'));
   const currDate = `${day}-${month}-${year}`;
 
-  // const weekday = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
-
   currParsedDate = new Date(
     `${year}-${month.length === 1 ? `0${month}` : month}-${
       value.Date.length === 1 ? `0${value.Date}` : value.Date
     }`
   );
-  console.log(currParsedDate);
 
   let originDay = currParsedDate.toString().slice(0, 3);
-  console.log(originDay);
 
-  // let dateNR = weekday[currParsedDate.getDay()];
-  // test
   let timeAMPM = value.Zhur.slice(0, 2);
-  // console.log(timeAMPM);
-  if (timeAMPM === '11') {
-    timeAMPM = `${value.Zhur} am`;
-    // console.log(timeAMPM);
-  } else {
-    timeAMPM = `${value.Zhur} pm`;
-  }
 
   return `<tr class="${
     currDate === `${value.Date}-${todayDate.getMonth() + 1}-${year}`
@@ -79,7 +66,7 @@ function timeTableHTML(value, selectedMonth) {
     <td>${originDay}</td>
     <td>${value.Fajr} am</td>
     <td>${value.Sunrise} am</td>
-    <td>${timeAMPM}</td>
+    <td>${timeAMPM === '11' ? `${value.Zhur} am` : `${value.Zhur} pm`}</td>
     <td>${value.Asar} pm</td>
     <td>${value.Sunset} pm</td>
     <td>${value.Isha} pm</td>
