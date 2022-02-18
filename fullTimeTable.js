@@ -49,14 +49,13 @@ function timeTableHTML(value, selectedMonth) {
 
   const weekday = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
 
-  // currParsedDate = new Date(
-  //   `${year}-${month.length === 1 ? `0${month}` : month}-${value.Date}`
-  // );
-  let dateParsed = value.Date.length === 1 ? `0${value.Date}` : value.Date;
+  currParsedDate = new Date(
+    `${year}-${month.length === 1 ? `0${month}` : month}-${value.Date}`
+  );
 
-  currParsedDate = new Date(`${year}-${month}-${dateParsed}`);
+  let originDay = currParsedDate.toString().slice(0, 3);
+  console.log(originDay);
 
-  console.log(dateParsed);
   let dateNR = weekday[currParsedDate.getDay()];
 
   let timeAMPM = value.Zhur.slice(0, 2);
@@ -74,7 +73,7 @@ function timeTableHTML(value, selectedMonth) {
       : ''
   }">
     <td>${value.Date}/${month}/${year}</td>
-    <td>${currParsedDate}</td>
+    <td>${originDay}</td>
     <td>${value.Fajr} am</td>
     <td>${value.Sunrise} am</td>
     <td>${timeAMPM}</td>
