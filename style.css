@@ -158,6 +158,7 @@ ul {
   margin: 0 auto;
   object-fit: cover;
   height: calc(100vh - 120px);
+  filter: brightness(70%);
 }
 
 .landing__page-heading {
