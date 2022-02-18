@@ -53,7 +53,12 @@ function timeTableHTML(value, selectedMonth) {
     `${year}-${month.length === 1 ? `0${month}` : month}-${value.Date}`
   );
 
+  currParsedDate = new Date(
+    `${year}-${month.length === 1 ? `0${month}` : month}-${value.Date}`
+  );
+
   let originDay = currParsedDate.toString().slice(0, 3);
+  originDay = currParsedDate.toString().slice(0, 3);
   console.log(originDay);
 
   // let dateNR = weekday[currParsedDate.getDay()];
