@@ -47,16 +47,16 @@ function timeTableHTML(value, selectedMonth) {
     : (month = localStorage.getItem('month'));
   const currDate = `${day}-${month}-${year}`;
 
-  const weekday = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
+  // const weekday = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
 
-  currParsedDate = new Date(
-    `${year}-${month.length === 1 ? `0${month}` : month}-${value.Date}`
-  );
+  // currParsedDate = new Date(
+  //   `${year}-${month.length === 1 ? `0${month}` : month}-${value.Date}`
+  // );
 
-  let originDay = currParsedDate.toString().slice(0, 3);
-  console.log(originDay);
+  // let originDay = currParsedDate.toString().slice(0, 3);
+  // console.log(originDay);
 
-  let dateNR = weekday[currParsedDate.getDay()];
+  // let dateNR = weekday[currParsedDate.getDay()];
 
   let timeAMPM = value.Zhur.slice(0, 2);
   // console.log(timeAMPM);
@@ -73,7 +73,7 @@ function timeTableHTML(value, selectedMonth) {
       : ''
   }">
     <td>${value.Date}/${month}/${year}</td>
-    <td>${originDay}</td>
+    <td>${value.Date}</td>
     <td>${value.Fajr} am</td>
     <td>${value.Sunrise} am</td>
     <td>${timeAMPM}</td>
