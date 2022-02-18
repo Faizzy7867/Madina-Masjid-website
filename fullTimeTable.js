@@ -57,7 +57,7 @@ function timeTableHTML(value, selectedMonth) {
   console.log(originDay);
 
   // let dateNR = weekday[currParsedDate.getDay()];
-
+  // test
   let timeAMPM = value.Zhur.slice(0, 2);
   // console.log(timeAMPM);
   if (timeAMPM === '11') {
