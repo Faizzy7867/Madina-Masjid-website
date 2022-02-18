@@ -1,3 +1,5 @@
+// FIXME ADD - local storage set to feb when clicking timetable in navbar
+
 const todayDate = new Date();
 const day = todayDate.getDate();
 const year = todayDate.getFullYear();
