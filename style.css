@@ -380,6 +380,7 @@ span {
   font-size: 24px;
   font-weight: 600;
   color: #32953c;
+  margin-bottom: 10px;
 }
 
 .pillar__para {
@@ -560,6 +561,11 @@ i {
   padding-right: 8px;
 }
 
+.fa-map-marked-alt {
+  display: flex;
+  justify-content: center;
+}
+
 .address {
   font-size: 24px;
   font-weight: 400;
@@ -626,4 +632,14 @@ table {
   border-color: inherit;
   text-align: left;
   vertical-align: top;
+}
+
+/* 
+Updates
+ */
+
+.updates__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
