@@ -49,7 +49,11 @@ function timeTableHTML(value, selectedMonth) {
 
   // const weekday = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
 
-  currParsedDate = new Date(`${year}-${month}-${value.Date}`);
+  currParsedDate = new Date(
+    `${year}-${month.length === 1 ? `0${month}` : month}-${
+      value.Date.length === 1 ? `0${value.Date}` : value.Date
+    }`
+  );
   console.log(currParsedDate);
 
   let originDay = currParsedDate.toString().slice(0, 3);
