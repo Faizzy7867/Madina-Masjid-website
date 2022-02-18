@@ -642,4 +642,20 @@ Updates
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 4.8rem 0;
+}
+
+.updates__heading {
+  padding: 16px 33px;
+  color: #0d1832;
+  border: 2px solid #3a9b43;
+  border-radius: 100px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-weight: 500;
+}
+
+.updates__newsletter {
+  width: 40em;
 }
