@@ -126,6 +126,9 @@
   .google__maps {
     width: 90vw;
   }
+  .prayer {
+    width: calc(100% / 2);
+  }
 }
 
 @media (max-width: 600px) {
