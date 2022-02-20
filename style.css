@@ -39,7 +39,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* Because we want header to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
   position: relative;
@@ -147,6 +146,24 @@ ul {
   display: none;
 }
 
+/* Sticky Navigation */
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.868);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
 /* LANDING PAGE */
 
 .landing-page {

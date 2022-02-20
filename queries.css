@@ -100,7 +100,6 @@
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0);
-    position: fixed;
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
