@@ -698,3 +698,10 @@ Updates
 .updates__newsletter {
   width: 40em;
 }
+
+.secondary__heading {
+  font-size: 26px;
+  font-weight: 100;
+  text-align: center;
+  margin: 24px;
+}
