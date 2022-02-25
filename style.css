@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/century-gothic");
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +9,7 @@
 
 body {
   overflow-x: hidden;
+  font-family: "Rubik", sans-serif;
 }
 
 html {
@@ -187,7 +189,7 @@ ul {
   top: 0;
   left: 0;
   bottom: 0;
-  font-family: "Amita", Sans-serif;
+  font-family: "Century Gothic 700", sans-serif;
   color: white;
   padding: 0 8px 300px 8px;
   font-size: 50px;
@@ -359,6 +361,8 @@ span {
   line-height: 1.5;
   max-width: 80%;
   text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 /* PILLARS OF ISLAM */
