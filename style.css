@@ -142,6 +142,7 @@ ul {
   height: 3.8rem;
   width: 3.8rem;
   color: #0b6736;
+  margin-top: 3px;
 }
 
 .icon-mobile-nav[name="close-outline"] {
