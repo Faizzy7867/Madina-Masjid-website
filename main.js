@@ -27,7 +27,7 @@ function prayerHTML(prayer) {
     <div class="prayer">
     <h2 class="prayer__title">Zuhr</h2>
     <h2 class="prayer__time">${
-      timeAMPM === "11" ? `${prayer.Zhur} am` : `${prayer.Zhur} pm`
+      timeAMPM === "11" ? `${prayer.Zhur}am` : `${prayer.Zhur}pm`
     }</h2>
     </div>
     <div class="prayer">
