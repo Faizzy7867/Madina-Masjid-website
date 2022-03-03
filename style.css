@@ -282,6 +282,11 @@ table {
   margin: 1.5rem auto;
 }
 
+table, thead, tr, th, td, tbody {
+  border-color: lightgray;
+}
+
+
 td {
   width: 20%;
   text-align: center;
@@ -635,10 +640,11 @@ table {
 .scrollit {
   overflow-y: hidden;
   height: calc(100vh - nav);
+  padding: 0 16px;
 }
 
 .tg td {
-  border: 1px solid black;
+  border: 1px solid lightgray;
   font-family: Arial, sans-serif;
   font-size: 14px;
   overflow: hidden;
@@ -646,7 +652,7 @@ table {
   word-break: normal;
 }
 .tg th {
-  border: 1px solid black;
+  border: 1px solid lightgray;
   font-family: Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
