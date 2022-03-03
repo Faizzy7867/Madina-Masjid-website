@@ -150,15 +150,15 @@
     padding: 4px 16px;
   }
   .logo {
-    height: 4rem
+    height: 5rem
   }
 
   .header {
-    height: 5rem;
+    height: 5.5rem;
   }
 
   .sticky .header {
-    height: 5rem
+    height: 5.5rem;
   }
 }
 
