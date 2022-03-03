@@ -149,6 +149,17 @@
   .email {
     padding: 4px 16px;
   }
+  .logo {
+    height: 5rem
+  }
+
+  .header {
+    height: 5rem;
+  }
+
+  .sticky .header {
+    height: 5rem
+  }
 }
 
 @media (max-width: 480px) {
