@@ -75,7 +75,7 @@
 
   .link__hover-effect,
   .link__hover-effect--black {
-    display: none;
+    visibility: none;
   }
 
   .prayer__timetable--row {
