@@ -166,8 +166,9 @@ ul {
 }
 
 .sticky .section-hero {
-  margin-top: 9.6rem;
+  margin-top: 8rem;
 }
+
 /* LANDING PAGE */
 
 .landing-page {
@@ -235,6 +236,7 @@ ul {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 10rem;
 }
 
 .prayer__time--heading {
@@ -623,6 +625,7 @@ Monthly Table
   margin: 22px;
   width: 10em;
   padding: 3px;
+  margin-top: 9.6rem;
 }
 
 .monthly-timetable--wrapper {
@@ -707,6 +710,7 @@ Updates
   text-align: center;
   color: black;
   font-weight: 500;
+  margin-top: 1.8rem;
 }
 
 .updates__newsletter {

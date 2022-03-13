@@ -23,7 +23,6 @@
   }
 }
 
-/* Point where contact email phone number newsletter are not aligned */
 @media (max-width: 820px) {
   .contact__box--title {
     font-size: 28px;
@@ -68,6 +67,18 @@
 
   .donate:before {
     display: none;
+  }
+
+  .sticky .section-hero {
+    margin-top: 5.6rem;
+  }
+
+  .link__hover-effect,
+  .link__hover-effect--black {
+    display: none;
+  }
+  .prayer__timetable--row {
+    margin-top: 7rem;
   }
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
@@ -150,7 +161,7 @@
     padding: 4px 16px;
   }
   .logo {
-    height: 5rem
+    height: 5rem;
   }
 
   .header {
