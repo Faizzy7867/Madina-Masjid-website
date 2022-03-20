@@ -17,7 +17,9 @@
 
 <img src="https://i.imgur.com/kew2VVG.png">
 
-<img src="https://i.imgur.com/t5vmxfu.png"><img src="https://i.imgur.com/71370kv.png">
+<img src="https://i.imgur.com/t5vmxfu.png">
+
+<img src="https://i.imgur.com/71370kv.png">
 
 ## Contribution
 
