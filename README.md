@@ -1,4 +1,4 @@
-# 📖 Madina Masjid Website
+# ⛪ Madina Masjid Website
 
 <img src="https://img.shields.io/github/deployments/Faizzy7867/Madina-Masjid-website/github-pages" alt="GitHub Badge"> <img src="https://img.shields.io/github/repo-size/Faizzy7867/Madina-Masjid-website">
 
