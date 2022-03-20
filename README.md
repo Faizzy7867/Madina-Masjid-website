@@ -5,7 +5,7 @@
 ### Description
 
 - A website created, for the local mosque located at Wakefield, in the UK, using HTML, CSS and JS
-- Shows the daily prayer times as well the monthly prayer times
+- Shows the daily prayer times as well as the monthly prayer times
 - Responsive on all devices
 - The website can be viewed [here](https://madinamasjidwakefield.netlify.app/)
 
