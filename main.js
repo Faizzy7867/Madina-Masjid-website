@@ -44,7 +44,7 @@ function prayerHTML(prayer) {
     </div>
     <div class="prayer">
     <h2 class="prayer__title">Jummah</h2>
-    <h2 class="prayer__time">1:00 pm</h2>
+    <h2 class="prayer__time">1:30 pm</h2>
     </div>`;
 }
 
