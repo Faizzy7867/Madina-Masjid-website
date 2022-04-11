@@ -705,6 +705,7 @@ Updates
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 4.8rem;
 }
 
 .updates__heading {
