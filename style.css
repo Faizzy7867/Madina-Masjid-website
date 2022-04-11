@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.cdnfonts.com/css/century-gothic");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/century-gothic');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
   overflow-x: hidden;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 html {
@@ -93,7 +93,7 @@ ul {
 }
 
 .link__hover-effect:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -3px;
   height: 3px;
@@ -146,7 +146,7 @@ ul {
   margin-top: 3px;
 }
 
-.icon-mobile-nav[name="close-outline"] {
+.icon-mobile-nav[name='close-outline'] {
   display: none;
 }
 
@@ -192,7 +192,7 @@ ul {
   top: 0;
   left: 0;
   bottom: 0;
-  font-family: "Century Gothic 700", sans-serif;
+  font-family: 'Century Gothic 700', sans-serif;
   color: white;
   padding: 0 8px 300px 8px;
   font-size: 50px;
@@ -211,7 +211,7 @@ ul {
   color: white;
   line-height: 2.1rem;
   font-size: 22px;
-  font-family: "Amita", Sans-serif;
+  font-family: 'Amita', Sans-serif;
 }
 
 /* TIMETABLE SECTION */
@@ -245,7 +245,7 @@ ul {
   margin-top: 1.5rem;
   margin-bottom: 3rem;
   font-weight: 700;
-  font-family: "Amita", Sans-serif;
+  font-family: 'Amita', Sans-serif;
 }
 
 .prayer__list {
@@ -366,7 +366,7 @@ span {
   font-size: 44px;
   font-weight: 500;
   margin: 16px;
-  font-family: "Amita", Sans-serif;
+  font-family: 'Amita', Sans-serif;
 }
 
 .about__para {
@@ -403,7 +403,7 @@ span {
   font-size: 44px;
   font-weight: 700;
   margin: 16px;
-  font-family: "Amita", Sans-serif;
+  font-family: 'Amita', Sans-serif;
   text-align: center;
 }
 
@@ -415,7 +415,7 @@ span {
 }
 
 .pillar__title {
-  font-family: "Amita", Sans-serif;
+  font-family: 'Amita', Sans-serif;
   font-size: 24px;
   font-weight: 600;
   color: #32953c;
@@ -705,7 +705,6 @@ Updates
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4.8rem;
 }
 
 .updates__heading {
