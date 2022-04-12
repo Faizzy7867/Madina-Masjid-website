@@ -1,152 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./queries.css" />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <title>Madina Masjid Wakefield</title>
-  </head>
-  <body class="sticky">
-    <div id="fb-root"></div>
-    <script
-      async
-      defer
-      crossorigin="anonymous"
-      src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v13.0&appId=1588909454827434&autoLogAppEvents=1"
-      nonce="nivu0wYR"
-    ></script>
-    <header class="header">
-      <a href="./index.html">
-        <img class="logo" src="./assets/logo.jpg" alt="Masjid Logo" />
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li>
-            <a
-              class="main-nav-link link__hover-effect link__hover-effect--black nav__hidden home__button"
-              href="./index.html"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              class="main-nav-link link__hover-effect link__hover-effect--black nav__hidden"
-              href="./index.html#about"
-              >About</a
-            >
-          </li>
-          <li>
-            <a
-              class="main-nav-link link__hover-effect link__hover-effect--black nav__hidden"
-              href="./updates.html"
-              >Updates</a
-            >
-          </li>
-          <li>
-            <a
-              class="main-nav-link link__hover-effect link__hover-effect--black nav__hidden"
-              href="./fullTimetable.html"
-              onclick="setToCurrentMonth()"
-              >Timetable</a
-            >
-          </li>
-          <li>
-            <a
-              class="main-nav-link link__hover-effect link__hover-effect--black"
-              href="./contact.html"
-              >Contact</a
-            >
-          </li>
-          <li>
-            <a
-              class="main-nav-link link__hover-effect l donate"
-              href="https://www.justgiving.com/onecheckout/donation/direct/charity/825256"
-              >DONATE</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-      </button>
-    </header>
-    <div class="updates__wrapper">
-      <h1 class="updates__heading">Updates</h1>
-    </div>
-    <section id="updates">
-      <div
-        class="fb-page"
-        data-href="https://www.facebook.com/Madina-Masjid-Wakefield-911981435602035"
-        data-tabs="timeline"
-        data-width=""
-        data-height=""
-        data-small-header="false"
-        data-adapt-container-width="true"
-        data-hide-cover="false"
-        data-show-facepile="true"
-      >
-        <blockquote
-          cite="https://www.facebook.com/Madina-Masjid-Wakefield-911981435602035"
-          class="fb-xfbml-parse-ignore"
-        >
-          <a
-            href="https://www.facebook.com/Madina-Masjid-Wakefield-911981435602035"
-            >Madina Masjid Wakefield</a
-          >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./queries.css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <title>Madina Masjid Wakefield</title>
+</head>
+
+<body class="sticky">
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v13.0"
+    nonce="zQrhF18U"></script>
+  <header class="header">
+    <a href="./index.html">
+      <img class="logo" src="./assets/logo.jpg" alt="Masjid Logo" />
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li>
+          <a class="main-nav-link link__hover-effect link__hover-effect--black nav__hidden home__button"
+            href="./index.html">Home</a>
+        </li>
+        <li>
+          <a class="main-nav-link link__hover-effect link__hover-effect--black nav__hidden"
+            href="./index.html#about">About</a>
+        </li>
+        <li>
+          <a class="main-nav-link link__hover-effect link__hover-effect--black nav__hidden"
+            href="./updates.html">Updates</a>
+        </li>
+        <li>
+          <a class="main-nav-link link__hover-effect link__hover-effect--black nav__hidden" href="./fullTimetable.html"
+            onclick="setToCurrentMonth()">Timetable</a>
+        </li>
+        <li>
+          <a class="main-nav-link link__hover-effect link__hover-effect--black" href="./contact.html">Contact</a>
+        </li>
+        <li>
+          <a class="main-nav-link link__hover-effect l donate"
+            href="https://www.justgiving.com/onecheckout/donation/direct/charity/825256">DONATE</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
+  </header>
+  <div class="updates__wrapper">
+    <h1 class="updates__heading">Updates</h1>
+  </div>
+  <section id="updates">
+    <div class="fb--wrapper">
+      <div class="fb-page" data-href="https://www.facebook.com/Madina-Masjid-Wakefield-911981435602035"
+        data-tabs="timeline" data-width="300" data-small-header="false" data-adapt-container-width="true"
+        data-hide-cover="false" data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/Madina-Masjid-Wakefield-911981435602035"
+          class="fb-xfbml-parse-ignore">
+          <a href="https://www.facebook.com/Madina-Masjid-Wakefield-911981435602035">Madina Masjid Wakefield</a>
         </blockquote>
       </div>
-      <h2 class="secondary__heading">
-        Please follow our facebook page for the latest updates
-      </h2>
-    </section>
-    <footer>
-      <div class="footer__container">
-        <div class="row row__column">
-          <a href="#">
-            <figure class="footer__logo">
-              <img
-                src="./assets/logo.jpg"
-                class="footer__logo--img"
-                alt="Logo of Masjid"
-              />
-            </figure>
-          </a>
-          <div class="contact__info">
-            <p class="footer__address">
-              78-84 St. Catherine St, Agbrigg, Wakefield, WF1 5BP
-            </p>
-            <p class="footer__address">Company number: 08606573</p>
-            <p class="footer__address">Charity Number: 1158401</p>
-            <p>07577291552</p>
-          </div>
-          <ul class="footer__lists">
-            <li>
-              <a class="nav__list--footer nav__hidden" href="#">Top</a>
-            </li>
-            <li>
-              <a class="nav__list--footer nav__hidden" href="#about">About</a>
-            </li>
-            <li>
-              <a class="nav__list--footer" href="./contact.html">Contact</a>
-            </li>
-          </ul>
-          <div class="footer__copyright">
-            Copyright &copy; <span class="year"></span> Madina Masjid Wakefield
-          </div>
+    </div>
+    <h2 class="secondary__heading">
+      Please follow our facebook page for the latest updates
+    </h2>
+  </section>
+  <footer>
+    <div class="footer__container">
+      <div class="row row__column">
+        <a href="#">
+          <figure class="footer__logo">
+            <img src="./assets/logo.jpg" class="footer__logo--img" alt="Logo of Masjid" />
+          </figure>
+        </a>
+        <div class="contact__info">
+          <p class="footer__address">
+            78-84 St. Catherine St, Agbrigg, Wakefield, WF1 5BP
+          </p>
+          <p class="footer__address">Company number: 08606573</p>
+          <p class="footer__address">Charity Number: 1158401</p>
+          <p>07577291552</p>
+        </div>
+        <ul class="footer__lists">
+          <li>
+            <a class="nav__list--footer nav__hidden" href="#">Top</a>
+          </li>
+          <li>
+            <a class="nav__list--footer nav__hidden" href="#about">About</a>
+          </li>
+          <li>
+            <a class="nav__list--footer" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="footer__copyright">
+          Copyright &copy; <span class="year"></span> Madina Masjid Wakefield
         </div>
       </div>
-    </footer>
-    <script defer src="main.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script defer src="main.js"></script>
+</body>
+
 </html>
