@@ -132,6 +132,14 @@
   .main-nav-link:visited {
     font-size: 2.2rem;
   }
+  .address {
+    padding-bottom: 12px;
+  }
+  .sticky,
+  .header {
+    padding: 40px 0;
+  }
+  }
 }
 
 @media (max-width: 675px) {
